@@ -11,7 +11,6 @@ endpoints:
 
 zuul:
   prefix: /services
-  routes:
 
 ribbon:
   eureka:
@@ -26,7 +25,15 @@ eureka:
 server:
   port: 8765
 
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  h2.console.enabled: true
+
 logging:
   level:
     ROOT: INFO
     org.springframework.web: DEBUG
+    com.xyz.metallica.gateway: DEBUG
