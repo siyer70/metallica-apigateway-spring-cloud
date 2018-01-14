@@ -24,6 +24,12 @@ eureka:
       
 server:
   port: 8765
+#  ssl:
+#    enabled: true
+#    key-store: classpath:keystore.jks
+#    key-store-password: metallica
+#    key-alias: selfsigned
+#    keyStoreType: JKS  
 
 spring:
   jpa:
